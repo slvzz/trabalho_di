@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/produtos.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <title>Tudo Sobre Controle</title>
+</head>
+<body>
+  <div class="page-container">
+    <header class="header">
+    
+      <div class="logo">
+          <img class="logo-image" src="/images/logo.png" alt="Logo da Empresa">
+          <h1>Tudo sobre controle</h1>
+      </div>
+      <div class="mobile-menu-button">
+        <button type="button" class="menu-toggle" id="menu-toggle" >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="nav-links">
+        <ul >
+          <li><a href="/html/home.html" class="nav-link">Página Principal</a></li>
+          <li><a href="/html/produtos.html" class="nav-link">Produtos</a></li>
+        </ul>
+      </nav>
+  
+    <!-- Mobile menu -->
+    <div class="mobile-menu" role="dialog" aria-modal="true" id="mobile-menu">
+      <div class="mobile-menu-content">
+        <header class="mobile-menu-header">
+          <div class="logo">
+            <img class="logo-image" src="/images/logo.png" alt="Logo da Empresa">
+            
+        </div>
+          <button type="button" class="menu-toggle" id="close-menu">
+            X
+          </button>
+          
+        </header>
+          <nav class="nav-links-mobile">
+            <ul >
+              <li><a href="/html/home.html" class="nav-link">Página Principal</a></li>
+              <li><a href="/html/produtos.html" class="nav-link">Produtos</a></li>
+            </ul>
+          </nav>
+      
+      </div>
+    </div>
+  </header>
+  
+  <main class="container" >
+    <div class="product" data-nome="Controle Playstation 5" data-preco="199.00">
+      <figure class="product-image">
+        <img src="/images/controle.png" alt="Controle de Playstation 5 (Cor Preta)">
+        <figcaption>
+          <h3>Controle Playstation 5</h3>
+          <p>R$ 199,00</p>
+          <p>Controle básico</p>
+        </figcaption>
+      </figure>
+      <button class="buy-button" onclick="adicionarAoCarrinho('produto1')">Comprar</button>
+    </div>
+    
+    <div class="product" data-nome="Controle Playstation 3" data-preco="1999.00">
+      <figure class="product-image">
+        <img src="/images/controle_ps3ouro.png" alt="Controle de Playstation 3 (Ouro 24K)">
+        <figcaption>
+          <h3>Controle Playstation 3</h3>
+          <p>R$ 1999,00</p>
+          <p>Edição limitada em ouro 24K.</p>
+        </figcaption>
+      </figure>
+      <button class="buy-button" onclick="adicionarAoCarrinho('produto2')">Comprar</button>
+    </div>
+    
+    <div class="product" data-nome="Controle Playstation 4" data-preco="199.00">
+      <figure class="product-image">
+        <img src="/images/controle_ps4.png" alt="Controle de Playstation 4 (Cor Preta)">
+        <figcaption>
+          <h3>Controle Playstation 4</h3>
+          <p>R$ 199,00</p>
+        </figcaption>
+      </figure>
+      <button class="buy-button" onclick="adicionarAoCarrinho('produto3')">Comprar</button>
+    </div>
+    
+    <div class="product" data-nome="Controle Xbox 360" data-preco="130.00">
+      <figure class="product-image">
+        <img src="/images/controle_360.png" alt="Controle de Xbox 360 (Cor Preta)">
+        <figcaption>
+          <h3>Controle Xbox 360</h3>
+          <p>R$ 130,00</p>
+        </figcaption>
+      </figure>
+      <button class="buy-button" onclick="adicionarAoCarrinho('produto4')">Comprar</button>
+    </div>
+    
+    <div class="product" data-nome="Controle Nintendo" data-preco="199.00">
+      <figure class="product-image">
+        <img src="/images/nintendo.png" alt="Controle de Nintendo (Cor Cinza)">
+        <figcaption>
+          <h3>Controle Nintendo</h3>
+          <p>R$ 199,00</p>
+        </figcaption>
+      </figure>
+      <button class="buy-button" onclick="adicionarAoCarrinho('produto5')">Comprar</button>
+    </div>
+    
+    <div class="product" data-nome="Controle Xbox One" data-preco="199.00">
+      <figure class="product-image">
+        <img src="/images/controle_xbox_branco.png" alt="Controle de Xbox One (Cor Branca)">
+        <figcaption>
+          <h3>Controle Xbox One</h3>
+          <p>R$ 199,00</p>
+        </figcaption>
+      </figure>
+      <button class="buy-button" onclick="adicionarAoCarrinho('produto6')">Comprar</button>
+    </div>
+    
+    <div class="product" data-nome="Controle Nintendo Switch" data-preco="199.00">
+      <figure class="product-image">
+        <img src="/images/nintendo_switch_preto.png" alt="Controle de Nintendo Switch (Cor Preta)">
+        <figcaption>
+          <h3>Controle Nintendo Switch</h3>
+          <p>R$ 199,00</p>
+        </figcaption>
+      </figure>
+      <button class="buy-button" onclick="adicionarAoCarrinho('produto7')">Comprar</button>
+    </div>
+    
+    <div class="product" data-nome="Controle Televisão" data-preco="99.00">
+      <figure class="product-image">
+        <img src="/images/controle_tv1.png" alt="Controle de Televisão">
+        <figcaption>
+          <h3>Controle Televisão</h3>
+          <p>R$ 99,00</p>
+        </figcaption>
+      </figure>
+      <button class="buy-button" onclick="adicionarAoCarrinho('produto8')">Comprar</button>
+    </div>
+    
+  </main>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="contact-info">
+        <h4>Contato</h4>
+        <p>Telefone: (55) 1234-5678</p>
+        <p>Email: contato@empresa.com</p>
+      </div>
+      <div class="social-media">
+        <h4>Redes Sociais</h4>
+        <a href="#" class="social-link">Facebook</a>
+        <a href="#" class="social-link">Twitter</a>
+        <a href="#" class="social-link">Instagram</a>
+      </div>
+      <div class="address">
+        <h4>Endereço</h4>
+        <p>Rua Exemplo, 123</p>
+        <p>Cidade, Estado</p>
+      </div>
+    </div>
+  </footer>
+  </div>
+  <script src="/js/header.js"></script>
+</body>
+</html>
